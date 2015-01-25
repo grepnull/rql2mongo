@@ -1,4 +1,11 @@
 language: node_js
 node_js:
-  - "0.10"
-  
+- '0.10'
+deploy:
+  provider: npm
+  email: v@grepnull.com
+  api_key:
+    secure: GMuWKQy+cuEbYeJPcHqitaMEamcsZwt9QsH+LQG1Gc8oBWfK2uJFYbGaOPhI7pAlzAz+rr33YIeGhajbKhEP9Trhqa+BB91vbWXdMIB+6/Fn9ngvX5Fz385d9z3Hf2zXqmXMcg33Bj2WLc/O14Z9vOp2647GjXBPu4iLVwzxzrA=
+  on:
+    tags: true
+    repo: grepnull/rql2mongo
